@@ -1,5 +1,12 @@
-
 # flux-panel转发面板 哆啦A梦转发面板
+
+## 项目更新说明
+由于一些个人原因，**flux-panel** 将暂停更新一段时间，**恢复更新时间暂不确定**。
+
+在此期间，项目不会继续推进新功能或修复问题，对可能带来的不便表示抱歉。当前已有功能仍可正常使用，也欢迎大家继续 Fork 或自行维护。
+
+如后续恢复更新，我会第一时间在仓库中说明。  
+感谢大家的理解与支持。
 
 
 本项目基于 [go-gost/gost](https://github.com/go-gost/gost) 和 [go-gost/x](https://github.com/go-gost/x) 两个开源库，实现了转发面板。
@@ -17,10 +24,26 @@
 ## 部署流程
 ---
 ### Docker Compose部署
+#### 快速部署
+面板端(稳定版)：
 ```bash
 curl -L https://raw.githubusercontent.com/bqlpfy/flux-panel/refs/heads/main/panel_install.sh -o panel_install.sh && chmod +x panel_install.sh && ./panel_install.sh
 ```
+节点端(稳定版)：
+```bash
+curl -L https://raw.githubusercontent.com/bqlpfy/flux-panel/refs/heads/main/install.sh -o install.sh && chmod +x install.sh && ./install.sh
 
+```
+
+面板端(开发版)：
+```bash
+curl -L https://raw.githubusercontent.com/bqlpfy/flux-panel/refs/heads/beta/panel_install.sh -o panel_install.sh && chmod +x panel_install.sh && ./panel_install.sh
+```
+节点端(开发版)：
+```bash
+curl -L https://raw.githubusercontent.com/bqlpfy/flux-panel/refs/heads/beta/install.sh -o install.sh && chmod +x install.sh && ./install.sh
+
+```
 
 #### 默认管理员账号
 
@@ -55,7 +78,7 @@ curl -L https://raw.githubusercontent.com/bqlpfy/flux-panel/refs/heads/main/pane
 请务必在合法、合规、安全的前提下使用本项目。  
 
 ---
-## ⭐ 喝杯咖啡！
+## ⭐ 喝杯咖啡！（USDT）
 
 | 网络       | 地址                                                                 |
 |------------|----------------------------------------------------------------------|
@@ -64,5 +87,4 @@ curl -L https://raw.githubusercontent.com/bqlpfy/flux-panel/refs/heads/main/pane
 | Aptos      | `0xf2f9fb14749457748506a8281628d556e8540d1eb586d202cd8b02b99d369ef8`  |
 
 [![Star History Chart](https://api.star-history.com/svg?repos=bqlpfy/flux-panel&type=Date)](https://www.star-history.com/#bqlpfy/flux-panel&Date)
-
 
